@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "87af1c43-76de-45ab-809f-70c02be27c49",
+		"name": "Payments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/com.PaymentService/api/Payments Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "paymentId",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "24/01/2022",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "48",
+							"type": "text"
+						},
+						{
+							"key": "customerId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/PaymentService/api/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PaymentService",
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/com.PaymentService/api/Payments Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/PaymentService/api/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PaymentService",
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/com.PaymentService/api/Payments Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"paymentId\": 4,\r\n    \"date\": \"02/02/2022\",\r\n    \"amount\": 45,\r\n    \"customerId\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PaymentService/api/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PaymentService",
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/com.PaymentService/api/payments Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<paymentId>4</paymentId>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PaymentService/api/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PaymentService",
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
