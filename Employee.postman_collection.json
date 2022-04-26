@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "e8e49eb3-8f22-441d-a0cd-86fe080a83b6",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/EmployeeService/api/employee Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "empId",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "empName",
+							"value": "emp6",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jack",
+							"type": "text"
+						},
+						{
+							"key": "telepohneNo",
+							"value": "437585",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/EmployeeService/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EmployeeService",
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/EmployeeService/api/employee Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<empId>3</empId>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/EmployeeService/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EmployeeService",
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/EmployeeService/api/employee Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/EmployeeService/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EmployeeService",
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/EmployeeService/api/employee Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empId\" : 5,\r\n    \"empName\" : \"emp5update\",\r\n    \"address\" : \"rerw\",\r\n    \"telepohneNo\" : 34324234\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/EmployeeService/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EmployeeService",
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
