@@ -1,0 +1,787 @@
+{
+	"info": {
+		"_postman_id": "cc537938-6676-4cb5-8c41-a4a38d365b2c",
+		"name": "ceb-power-usage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AppointmentService post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "appointmentid",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "doctorid",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "doctorName",
+							"value": "doc5",
+							"type": "text"
+						},
+						{
+							"key": "patientid",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "patientName",
+							"value": "pat5",
+							"type": "text"
+						},
+						{
+							"key": "hospitalName",
+							"value": "hos5",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "01/02/2022",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/AppointmentService/api/Appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AppointmentService",
+						"api",
+						"Appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AppointmentService get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/AppointmentService/api/Appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AppointmentService",
+						"api",
+						"Appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AppointmentService put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"appointmentid\" : 3,\r\n    \"doctorid\" : 3,\r\n    \"doctorName\" : \"docupdated3\",\r\n    \"patientid\" : 3,\r\n    \"patientName\" : \"pat3\",\r\n    \"hospitalName\" : \"hos3\",\r\n    \"date\" : \"01/02/2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/AppointmentService/api/Appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AppointmentService",
+						"api",
+						"Appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AppointmentService del",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<appointmentid>4</appointmentid>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/AppointmentService/api/Appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AppointmentService",
+						"api",
+						"Appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/CustomerService/api/customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerId",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "customerName",
+							"value": "cus5",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "tttttttttttt",
+							"type": "text"
+						},
+						{
+							"key": "telepohneNo",
+							"value": "555555",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/CustomerService/api/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CustomerService",
+						"api",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/CustomerService/api/customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/CustomerService/api/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CustomerService",
+						"api",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/CustomerService/api/customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\" : 4,\r\n    \"customerName\" : \"cus4\",\r\n    \"address\" : \"updatesd\",\r\n    \"telepohneNo\" : 33333\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/CustomerService/api/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CustomerService",
+						"api",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/CustomerService/api/customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<customerId>3</customerId>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/CustomerService/api/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CustomerService",
+						"api",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/EmployeeService/api/employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "empId",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "empName",
+							"value": "emp5",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "adsdaqwqw",
+							"type": "text"
+						},
+						{
+							"key": "telepohneNo",
+							"value": "23333",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/EmployeeService/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EmployeeService",
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/EmployeeService/api/employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/EmployeeService/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EmployeeService",
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/EmployeeService/api/employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empId\" : 5,\r\n    \"empName\" : \"emp5update\",\r\n    \"address\" : \"rerw\",\r\n    \"telepohneNo\" : 34324234\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/EmployeeService/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EmployeeService",
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/EmployeeService/api/employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<empId>3</empId>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/EmployeeService/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EmployeeService",
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/PowerUsageService/api/PowerUsage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PowerUsageService/api/PowerUsage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PowerUsageService",
+						"api",
+						"PowerUsage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/PowerUsageService/api/PowerUsage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "puId",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "units",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "month",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "cusId",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "empId",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/PowerUsageService/api/PowerUsage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PowerUsageService",
+						"api",
+						"PowerUsage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/PowerUsageService/api/PowerUsage",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"puId\": 1,\r\n    \"units\": 44,\r\n    \"amount\": 10,\r\n    \"month\": 2,\r\n    \"cusId\": 2,\r\n    \"empId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PowerUsageService/api/PowerUsage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PowerUsageService",
+						"api",
+						"PowerUsage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/PowerUsageService/api/PowerUsage",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<puId>3</puId>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PowerUsageService/api/PowerUsage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PowerUsageService",
+						"api",
+						"PowerUsage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/com.PaymentService/api/Payments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PaymentService/api/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PaymentService",
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/com.PaymentService/api/Payments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "paymentId",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "13/01/2022",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "43",
+							"type": "text"
+						},
+						{
+							"key": "customerId",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/PaymentService/api/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PaymentService",
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/com.PaymentService/api/Payments",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"paymentId\": 4,\r\n    \"date\": \"21/02/2022\",\r\n    \"amount\": 55,\r\n    \"customerId\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PaymentService/api/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PaymentService",
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/com.PaymentService/api/payments",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<paymentId>4</paymentId>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PaymentService/api/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PaymentService",
+						"api",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/PaymentService/api/payments/getCustomerPowerUsageByEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerId",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/PaymentService/api/payments/getCustomerPowerUsageByEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PaymentService",
+						"api",
+						"payments",
+						"getCustomerPowerUsageByEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/CustomerService/api/customer/getPowerUsageByCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerId",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/CustomerService/api/customer/getPowerUsageByCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CustomerService",
+						"api",
+						"customer",
+						"getPowerUsageByCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/EmployeeService/api/employee/getCustomerPowerUsageByEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "employeeId",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/EmployeeService/api/employee/getCustomerPowerUsageByEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EmployeeService",
+						"api",
+						"employee",
+						"getCustomerPowerUsageByEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/PowerUsageService/api/PowerUsage/getPowerUsageByCustomer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PowerUsageService/api/PowerUsage/getPowerUsageByCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PowerUsageService",
+						"api",
+						"PowerUsage",
+						"getPowerUsageByCustomer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
